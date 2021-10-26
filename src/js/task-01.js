@@ -1,25 +1,19 @@
-const listById = document.querySelector('#categories');
-console.log(listById);
+const listEl = document.querySelector('#categories');
 
-const listItemByClass = listById.querySelector('.item');
-console.log(listItemByClass);
+const listItemEl = document.querySelectorAll('.item');
+const listItemTitleEl = document.querySelectorAll('h2');
+const listAnimalsEl = listEl.querySelectorAll('ul');
 
-const listItemTitleByClass = listItemByClass.firstElementChild;
-console.log(listItemTitleByClass);
 
-// class Category {
+console.log(`Number of categories: ${listItemEl.length}`);
 
-//   constructor({listCategory, category, elemrnts} ={}) {
-//     this.listCategory = listCategory;
-//     this.category = category;
-//     this.elemrnts = elemrnts;
-//   }
+console.log(`Category: ${listItemTitleEl[0].textContent}`);
+console.log(`Elements: ${listAnimalsEl[0].children.length}`);
 
-//   get showCategory (){
-//     return ``
-//   }
-// }
+console.log(`Category: ${listItemTitleEl[1].textContent}`);
+console.log(`Elements: ${listAnimalsEl[1].children.length}`);
 
-// for (const item of listById) {
-//   console.log(item);
-// }
+console.log(`Category: ${listItemTitleEl[2].textContent}`);
+console.log(`Elements: ${listAnimalsEl[2].children.length}`);
+
+//====================================================================
