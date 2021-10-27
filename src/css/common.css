@@ -8,7 +8,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #e4e4e4;
   color: #212121;
   line-height: 1.5;
 }
@@ -32,12 +32,15 @@ button {
   list-style: none;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 3px 3px 25px #8f8c8c;
 }
 .gallery li:not(:last-child) {
   margin-right: 10px;
 }
 
 .gallery__img {
+  background: #fff;
+  padding: 10px;
   width: 100%;
   max-width: 300px;
   height: 100%;
