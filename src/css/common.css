@@ -47,3 +47,9 @@ button {
   display: block;
   object-fit: cover;
 }
+.alert {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00c451;
+  margin-left: 100px;
+}

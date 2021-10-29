@@ -1,7 +1,7 @@
 const inputEl = document.querySelector("#validation-input");
 
-// const inputvalidation = () => {
-//   inputEl.addEventListener("input", () => {
+// const inputvalidation = (event) => {
+//
 //     if (inputEl.value.length !== +inputEl.dataset.length) {
 //       inputEl.classList.add("invalid");
 //     }
@@ -9,14 +9,12 @@ const inputEl = document.querySelector("#validation-input");
 //       inputEl.classList.add("valid");
 //       inputEl.classList.remove("invalid");
 //     }
-//   });
 // };
 
 const inputvalidation = () => {
-  inputEl.addEventListener("input", () =>
-    inputEl.value.length !== +inputEl.dataset.length
-      ? inputEl.classList.add("invalid")
-      : (inputEl.classList.add("valid"), inputEl.classList.remove("invalid"))
-  );
+  inputEl.value.length !== +inputEl.dataset.length
+    ? inputEl.classList.add("invalid")
+    : (inputEl.classList.add("valid"), inputEl.classList.remove("invalid"));
 };
-inputvalidation();
+
+inputEl.addEventListener("input", inputvalidation);
