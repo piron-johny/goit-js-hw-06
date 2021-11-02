@@ -24,15 +24,13 @@ const list = document.querySelector("#ingredients");
 // }
 
 // --#3
-const makeIngedients = (ingredients) => {
-  return ingredients.map((ingredient) => {
-    const createListItem = document.createElement("li");
-    createListItem.classList.add("item");
+const makeIngedients = (ingredients) => ingredients.map((ingredient) => {
+  const createListItem = document.createElement("li");
+  createListItem.classList.add("item");
 
-    createListItem.innerHTML = ingredient;
-    return list.appendChild(createListItem);
-  });
-};
+  createListItem.innerHTML = ingredient;
+  return list.appendChild(createListItem);
+});
 
 makeIngedients(ingredients);
 

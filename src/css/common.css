@@ -26,6 +26,8 @@ button {
 .gallery {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .gallery li {
@@ -33,10 +35,9 @@ button {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 3px 3px 25px #8f8c8c;
+  margin: 5px;
 }
-.gallery li:not(:last-child) {
-  margin-right: 10px;
-}
+
 
 .gallery__img {
   background: #fff;
@@ -46,12 +47,6 @@ button {
   height: 100%;
   display: block;
   object-fit: cover;
-}
-.alert {
-  font-size: 20px;
-  font-weight: 700;
-  color: #00c451;
-  margin-left: 100px;
 }
 
 #boxes div{
