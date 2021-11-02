@@ -10,10 +10,6 @@ const handleSubmit = function (event) {
   }
   if (email.value !== "" || password.value !== "") {
     return (
-      form.insertAdjacentHTML(
-        "beforebegin",
-        `<div class="alert"><p>Welcome!</p></div>`
-      ),
       console.log({ email: email.value, password: password.value }),
       event.currentTarget.reset()
     );

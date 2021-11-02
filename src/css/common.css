@@ -53,3 +53,12 @@ button {
   color: #00c451;
   margin-left: 100px;
 }
+
+#boxes div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #1d1d1d;
+}
