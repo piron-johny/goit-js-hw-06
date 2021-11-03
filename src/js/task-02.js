@@ -24,13 +24,35 @@ const list = document.querySelector("#ingredients");
 // }
 
 // --#3
-const makeIngedients = (ingredients) => ingredients.map((ingredient) => {
-  const createListItem = document.createElement("li");
-  createListItem.classList.add("item");
 
-  createListItem.innerHTML = ingredient;
-  return list.appendChild(createListItem);
-});
+// const makeIngedients = (ingredients) => ingredients.map((ingredient) => {
+//   const createListItem = document.createElement("li");
+//   createListItem.classList.add("item");
+
+//   createListItem.innerHTML = ingredient;
+//   return list.appendChild(createListItem);
+// });
+
+const arr = []
+const createListItem = document.createElement("li");
+createListItem.classList.add("item");
+
+const makeIngedients = (ingredients) => {
+  ingredients.map((ingredient) => {
+
+    createListItem.innerHTML = ingredient;
+    arr.push(createListItem);
+    return arr
+  });
+  console.log(arr.join(',')[1]);
+  console.log(createListItem);
+  return list.append(arr.join(''))
+}
+
+
+
+
+
 
 makeIngedients(ingredients);
 

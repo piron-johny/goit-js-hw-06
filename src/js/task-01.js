@@ -1,19 +1,17 @@
-const listEl = document.querySelector('#categories');
+const refs = {
+  listEl: document.querySelector('#categories'),
+  listItemEl: document.querySelectorAll('.item'),
+  listItemTitleEl: document.querySelectorAll('h2'),
+  listAnimalsEl: document.querySelectorAll('.item ul'),
+}
 
-const listItemEl = document.querySelectorAll('.item');
-const listItemTitleEl = document.querySelectorAll('h2');
-const listAnimalsEl = listEl.querySelectorAll('ul');
 
+const listCategories = () => {
+  console.log(`Number of categories: ${refs.listEl.children.length}`);
 
-console.log(`Number of categories: ${listItemEl.length}`);
-
-console.log(`Category: ${listItemTitleEl[0].textContent}`);
-console.log(`Elements: ${listAnimalsEl[0].children.length}`);
-
-console.log(`Category: ${listItemTitleEl[1].textContent}`);
-console.log(`Elements: ${listAnimalsEl[1].children.length}`);
-
-console.log(`Category: ${listItemTitleEl[2].textContent}`);
-console.log(`Elements: ${listAnimalsEl[2].children.length}`);
-
-//====================================================================
+  for (let i = 0; i < refs.listEl.children.length; i += 1) {
+    console.log(`Category: ${refs.listItemTitleEl[i].textContent}`);
+    console.log(`Elements: ${refs.listAnimalsEl[i].children.length}`);
+  }
+};
+listCategories()
