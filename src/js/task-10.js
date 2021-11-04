@@ -23,13 +23,34 @@ function createBoxes(amount) {
           height: ${i * 10 + 30 + "px"};
           background-color: ${getRandomHexColor()};
           ">
-          ${i+1}
+          ${i + 1}
         </div >`
       );
     }
-    refs.inputValueEl.value = 0
-    console.log(refs.inputValueEl.value);
+
+    // console.log(refs.resultInnerVelue.lastChild);
   }
+  // if (refs.resultInnerVelue.childElementCount !== 0) {
+
+  //   for (let i = refs.resultInnerVelue.childElementCount;
+  //     i < (+amount + refs.resultInnerVelue.childElementCount);
+  //     i += 1) {
+  //     refs.resultInnerVelue.insertAdjacentHTML(
+  //       "beforeend",
+  //       `<div style="width: ${i * 10 + 30 + "px"};
+  //         height: ${i * 10 + 30 + "px"};
+  //         background-color: ${getRandomHexColor()};
+  //         ">
+  //         ${i + 1}
+  //       </div >`
+  //     );
+  //   }
+  // }
+  refs.inputValueEl.value = 0
+
+
+  console.log(refs.inputValueEl.value);
+  console.log(refs.resultInnerVelue.childElementCount);
 };
 
 function destroyBoxes() {
