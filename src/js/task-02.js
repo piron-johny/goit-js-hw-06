@@ -40,7 +40,7 @@ const makeIngedients = (ingredients) => {
     return
 
   });
-  console.log(b.join(','));
+  console.log(b.join);
   return list.append(...b);
 };
 
